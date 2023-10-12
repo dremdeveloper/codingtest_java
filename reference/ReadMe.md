@@ -1,3 +1,7 @@
+# 레퍼런스
+
+코딩테스트를 할 때 반드시 알아야할 문법들에 대해 다룹니다.
+
 | 파일 이름 | 설명 |
 |-----------|------|
 | [Array.java](https://github.com/dremdeveloper/codingtest_java/blob/main/reference/Array.java) | 배열 관련 코드와 예제. 기본적인 배열 선언과 초기화, 그리고 배열의 길이를 얻는 방법에 대한 예제 코드가 포함되어 있습니다. |
