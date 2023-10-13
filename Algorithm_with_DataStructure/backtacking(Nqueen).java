@@ -3,8 +3,6 @@
 // | Q&A        | https://open.kakao.com/o/gX0WnTCf          |
 // | business   | ultrasuperrok@gmail.com                    |
 //############################################################
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 1. 개념:
@@ -79,8 +77,8 @@ import java.util.List;
  * 퀸들이 서로 공격할 수 없는 위치에 배치되도록 합니다.
  */
 
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class BacktrackingExample {
     static int N = 4;  // 체스판의 크기 및 퀸의 수
