@@ -3,8 +3,6 @@
 // | Q&A        | https://open.kakao.com/o/gX0WnTCf          |
 // | business   | ultrasuperrok@gmail.com                    |
 //############################################################
-import java.util.*;
-
 /**
  * 1. 개념: 
  * BFS(Breadth-First Search, 너비 우선 탐색)는 그래프 또는 트리를 탐색하는 알고리즘 중 하나로, 시작 노드에서 시작하여 인접한 노드를 먼저 탐색하는 방법입니다.
@@ -28,6 +26,8 @@ import java.util.*;
  * - 큐가 비어있지 않다면, 위의 과정을 반복합니다.
  * - 큐가 비어있다면, 알고리즘을 종료합니다.
  */
+
+import java.util.*;
 
 public class BFSExample {
     // 그래프를 인접 리스트로 표현
