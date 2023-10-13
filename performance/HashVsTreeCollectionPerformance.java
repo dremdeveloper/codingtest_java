@@ -3,20 +3,21 @@
 // | Q&A        | https://open.kakao.com/o/gX0WnTCf          |
 // | business   | ultrasuperrok@gmail.com                    |
 //############################################################
+
+/*
+본 코드는 해시 기반과 트리 기반의 셋 및 맵의 성능을 비교하기 위한 것입니다.
+
+주요 내용:
+1. 해시 기반(HashSet, HashMap):
+   - add, contains, remove 연산은 평균적으로 O(1)의 시간 복잡도를 가집니다.
+   - 하지만 최악의 경우, 충돌이 발생하면 성능이 떨어질 수 있습니다.
+2. 트리 기반(TreeSet, TreeMap):
+   - add, contains, remove 연산은 O(log n)의 시간 복잡도를 가집니다.
+*/
+
 import java.util.*;
 
 public class Main {
-
-    /*
-    본 코드는 해시 기반과 트리 기반의 셋 및 맵의 성능을 비교하기 위한 것입니다.
-    
-    주요 내용:
-    1. 해시 기반(HashSet, HashMap):
-       - add, contains, remove 연산은 평균적으로 O(1)의 시간 복잡도를 가집니다.
-       - 하지만 최악의 경우, 충돌이 발생하면 성능이 떨어질 수 있습니다.
-    2. 트리 기반(TreeSet, TreeMap):
-       - add, contains, remove 연산은 O(log n)의 시간 복잡도를 가집니다.
-    */
 
     public static void main(String[] args) {
         int size = 100000;
