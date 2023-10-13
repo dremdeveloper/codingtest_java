@@ -3,8 +3,6 @@
 // | Q&A        | https://open.kakao.com/o/gX0WnTCf          |
 // | business   | ultrasuperrok@gmail.com                    |
 //############################################################
-import java.util.*;
-
 /**
  * 1. 개념:
  * DFS(Depth-First Search, 깊이 우선 탐색)는 그래프 또는 트리를 탐색하는 알고리즘 중 하나로, 시작 노드에서 시작하여
@@ -35,6 +33,7 @@ import java.util.*;
  *   [2] -- [4] -- [5]
  * - DFS 탐색 순서: 0 -> 1 -> 3 -> 5 -> 4 -> 2
  */
+import java.util.*;
 
 public class DFSExample {
     // 그래프를 인접 리스트로 표현
