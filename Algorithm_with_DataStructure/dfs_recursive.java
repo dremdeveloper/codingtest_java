@@ -32,48 +32,6 @@
  * - DFS 탐색 순서: 0 -> 1 -> 3 -> 5 -> 4 -> 2
  */
 
-import java.util.*;
-
-public class DFSExample {
-    // 그래프를 인접 리스트로 표현
-    static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
-    // 노드의 방문 정보를 저장하는 배열
-    static boolean[] visited;
-
-    public static void dfs(int node) {
-        // 현재 노드를 방문 처리
-        visited[node] = true;
-        System.out.print(node + " ");
-
-        // 인접 노드를 확인
-        for (int i = 0; i < graph.get(node).size(); i++) {
-            int y = graph.get(node).get(i);
-            // 방문하지 않은 인접 노드가 있다면
-            if (!visited[y]) {
-                dfs(y);  // 재귀 호출
-            }
-        }
-    }
-
-    public static void main(String[] args) {
-        // 그래프 초기화
-        for (int i = 0; i < 6; i++) {
-            graph.add(new ArrayList<Integer>());
-        }
-
-        // 그래프의 노드 연결 정보 설정
-        graph.get(0).add(1); graph.get(0).add(2);
-        graph.get(1).add(0); graph.get(1).add(3); graph.get(1).add(4);
-        graph.get(2).add(0); graph.get(2).add(4);
-        graph.get(3).add(1); graph.get(3).add(5);
-        graph.get(4).add(1); graph.get(4).add(2); graph.get(4).add(5);
-        graph.get(5).add(3); graph.get(5).add(4);
-
-        // 방문 정보 배열 초기화
-        visited = new boolean[6];
-
-        // DFS 알고리즘 실행
-        dfs(0);
 /*
 Graph:
 0 -> [1, 2]
@@ -117,6 +75,48 @@ Visited: [0, 1, 3, 5, 4, 2]
 
 9. 스택이 비어있으므로 DFS를 종료합니다.
 */
+import java.util.*;
+
+public class DFSExample {
+    // 그래프를 인접 리스트로 표현
+    static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+    // 노드의 방문 정보를 저장하는 배열
+    static boolean[] visited;
+
+    public static void dfs(int node) {
+        // 현재 노드를 방문 처리
+        visited[node] = true;
+        System.out.print(node + " ");
+
+        // 인접 노드를 확인
+        for (int i = 0; i < graph.get(node).size(); i++) {
+            int y = graph.get(node).get(i);
+            // 방문하지 않은 인접 노드가 있다면
+            if (!visited[y]) {
+                dfs(y);  // 재귀 호출
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        // 그래프 초기화
+        for (int i = 0; i < 6; i++) {
+            graph.add(new ArrayList<Integer>());
+        }
+
+        // 그래프의 노드 연결 정보 설정
+        graph.get(0).add(1); graph.get(0).add(2);
+        graph.get(1).add(0); graph.get(1).add(3); graph.get(1).add(4);
+        graph.get(2).add(0); graph.get(2).add(4);
+        graph.get(3).add(1); graph.get(3).add(5);
+        graph.get(4).add(1); graph.get(4).add(2); graph.get(4).add(5);
+        graph.get(5).add(3); graph.get(5).add(4);
+
+        // 방문 정보 배열 초기화
+        visited = new boolean[6];
+
+        // DFS 알고리즘 실행
+        dfs(0);
 
     }
 }
